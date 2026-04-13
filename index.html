@@ -10,16 +10,16 @@
         @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
         :root {
-            --bg: #07111f;
-            --surface: #0f1b2d;
-            --surface-soft: #10233b;
-            --text: #e5eefb;
-            --muted: #9fb2cc;
-            --brand: #07111f;
-            --brand-strong: #7dd3fc;
-            --accent: #38bdf8;
-            --border: rgba(148, 163, 184, 0.18);
-            --shadow: 0 24px 70px rgba(2, 8, 23, 0.42);
+            --bg: #edf4fb;
+            --surface: #ffffff;
+            --surface-soft: #f2f7ff;
+            --text: #1f2f46;
+            --muted: #5f7391;
+            --brand: #0b4c8c;
+            --brand-strong: #0e63b6;
+            --accent: #1f93de;
+            --border: rgba(146, 167, 196, 0.32);
+            --shadow: 0 20px 45px rgba(27, 64, 109, 0.14);
             --radius-lg: 18px;
             --radius-md: 12px;
         }
@@ -33,9 +33,9 @@
             font-family: 'Manrope', 'Segoe UI', sans-serif;
             color: var(--text);
             background:
-                radial-gradient(circle at top left, rgba(56, 189, 248, 0.16), transparent 30%),
-                radial-gradient(circle at top right, rgba(125, 211, 252, 0.12), transparent 28%),
-                linear-gradient(180deg, #05101c 0%, #091627 45%, #07111f 100%);
+                radial-gradient(circle at top left, rgba(31, 147, 222, 0.14), transparent 32%),
+                radial-gradient(circle at top right, rgba(127, 199, 255, 0.2), transparent 30%),
+                linear-gradient(180deg, #f6fbff 0%, #edf4fb 45%, #e7f0fa 100%);
             line-height: 1.6;
         }
 
@@ -51,7 +51,7 @@
 
         header {
             padding: 48px 38px 28px;
-            background: linear-gradient(140deg, #07111f, #0d2138 56%, #123252);
+            background: linear-gradient(140deg, #2d89da, #4ca6ef 56%, #6cbcff);
             color: #fff;
             position: relative;
         }
@@ -86,7 +86,7 @@
 
         nav {
             background: var(--surface-soft);
-            border-top: 1px solid rgba(255, 255, 255, 0.4);
+            border-top: 1px solid rgba(255, 255, 255, 0.75);
             border-bottom: 1px solid var(--border);
             padding: 14px 30px;
         }
@@ -108,16 +108,16 @@
             font-weight: 600;
             text-decoration: none;
             color: var(--text);
-            border: 1px solid rgba(125, 211, 252, 0.25);
+            border: 1px solid rgba(31, 147, 222, 0.24);
             border-radius: 999px;
-            background: rgba(10, 18, 31, 0.75);
+            background: #ffffff;
             transition: all 180ms ease;
         }
 
         nav a:hover {
             transform: translateY(-1px);
-            background: rgba(125, 211, 252, 0.16);
-            border-color: rgba(125, 211, 252, 0.3);
+            background: #eef6ff;
+            border-color: rgba(31, 147, 222, 0.38);
         }
 
         main {
@@ -142,7 +142,7 @@
             top: 0;
             height: 100%;
             width: 4px;
-            background: linear-gradient(#7dd3fc, #38bdf8);
+            background: linear-gradient(#5caef0, #1f93de);
         }
 
         h2 {
@@ -160,7 +160,7 @@
             border-top: 1px solid var(--border);
             color: var(--muted);
             font-size: 0.92rem;
-            background: #07111f;
+            background: #f5f9ff;
         }
 
         @media (max-width: 720px) {
