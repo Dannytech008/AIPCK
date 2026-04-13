@@ -1,0 +1,24 @@
+<!--women group dashboard-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Dashboard</title>
+    <style>
+        :root { --panel:#0f1b2d; --text:#e5eefb; --muted:#9fb2cc; --accent:#7dd3fc; --border:rgba(148,163,184,.18); --shadow:0 24px 70px rgba(2,8,23,.42);} *{box-sizing:border-box}
+        body{margin:0;min-height:100vh;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;color:var(--text);background:radial-gradient(circle at top left,rgba(56,189,248,.16),transparent 30%),radial-gradient(circle at top right,rgba(125,211,252,.12),transparent 28%),linear-gradient(180deg,#05101c 0%,#091627 45%,#07111f 100%)}
+        .page-shell{width:min(1000px,94%);margin:32px auto;background:var(--panel);border:1px solid var(--border);border-radius:20px;box-shadow:var(--shadow);overflow:hidden}
+        header{padding:28px 26px 22px;background:linear-gradient(135deg,#0c1f34,#10263f);border-bottom:1px solid var(--border)}
+        .eyebrow{display:inline-block;margin-bottom:10px;padding:6px 12px;border-radius:999px;border:1px solid rgba(125,211,252,.28);color:var(--accent);text-transform:uppercase;letter-spacing:.1em;font-size:.78rem;font-weight:700}
+        h1{margin:0 0 10px;font-size:clamp(1.5rem,3vw,2.4rem);line-height:1.2}.subtitle{margin:0;color:var(--muted);max-width:760px}
+        main{padding:22px}.button-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+        .group-button{display:flex;align-items:center;justify-content:center;min-height:72px;padding:16px;text-decoration:none;color:var(--text);font-weight:800;border-radius:18px;border:1px solid rgba(125,211,252,.24);background:linear-gradient(180deg,rgba(16,35,59,.96),rgba(9,22,39,.96));box-shadow:0 16px 34px rgba(2,8,23,.18);transition:transform 180ms ease,border-color 180ms ease,background-color 180ms ease}
+        .group-button:hover,.group-button:focus-visible{transform:translateY(-2px);border-color:rgba(125,211,252,.45);background:linear-gradient(180deg,rgba(20,44,73,.96),rgba(12,29,52,.96));outline:none}
+        footer{padding:0 22px 22px;color:var(--muted);font-size:.92rem}
+    </style>
+</head>
+<body>
+<div class="page-shell"><header><span class="eyebrow">Women Group</span><h1>Women dashboard</h1><p class="subtitle">Use the buttons below to move to chats, members, events, or leave the group.</p></header><main><section class="button-grid" aria-label="Women group actions"><a class="group-button" href="chats.html">Chats</a><a class="group-button" href="members.html">Members</a><a class="group-button" href="events.html">Events</a><a class="group-button" href="leaders-directory.html">View Leaders</a><a class="group-button" href="groups.html">Leave Group</a></section></main><footer><p>&copy; 2026 AIPCK Thika Diocese Women Dashboard.</p></footer></div>
+</body>
+</html>

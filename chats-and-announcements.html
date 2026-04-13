@@ -1,0 +1,119 @@
+<!--leaders can post chats and announcements here for members to see-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chats and Announcements</title>
+    <style>
+        :root {
+            --primary: #7dd3fc;
+            --primary-strong: #38bdf8;
+            --background: #07111f;
+            --panel: #0f1b2d;
+            --text: #e5eefb;
+            --muted: #9fb2cc;
+            --border: rgba(148, 163, 184, 0.2);
+            --shadow: 0 22px 60px rgba(2, 8, 23, 0.4);
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background:
+                radial-gradient(circle at top left, rgba(56, 189, 248, 0.16), transparent 30%),
+                radial-gradient(circle at top right, rgba(125, 211, 252, 0.12), transparent 28%),
+                linear-gradient(180deg, #05101c 0%, #091627 45%, #07111f 100%);
+            color: var(--text);
+        }
+
+        .page-shell {
+            width: min(92%, 1000px);
+            margin: 40px auto;
+            border-radius: 16px;
+            background: var(--panel);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+        }
+
+        header {
+            padding: 26px 24px 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            justify-content: center;
+            border-bottom: 1px solid var(--border);
+            background: linear-gradient(135deg, #0c1f34, #10263f);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(1.3rem, 3vw, 2rem);
+            line-height: 1.25;
+        }
+
+        .subtitle {
+            margin: 0;
+            color: var(--muted);
+        }
+
+        .dashboard-buttons {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .dashboard-buttons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 42px;
+            padding: 0 16px;
+            text-decoration: none;
+            color: var(--text);
+            border: 1px solid rgba(125, 211, 252, 0.3);
+            border-radius: 999px;
+            background: rgba(10, 18, 31, 0.78);
+            font-weight: 600;
+            transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease;
+        }
+
+        .dashboard-buttons a:hover,
+        .dashboard-buttons a:focus-visible {
+            background: rgba(125, 211, 252, 0.16);
+            border-color: rgba(125, 211, 252, 0.5);
+            transform: translateY(-1px);
+            outline: none;
+        }
+
+        @media (max-width: 640px) {
+            .page-shell {
+                width: min(96%, 1000px);
+                margin: 18px auto;
+            }
+
+            header {
+                padding: 20px 16px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-shell">
+        <header>
+            <h1>Chats and Announcements Dashboard</h1>
+            <p class="subtitle">Choose a section to manage updates and member communication.</p>
+            <ul class="dashboard-buttons">
+                <li><a href="chats.html">Chats</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="scriptures.html">Scriptures</a></li>
+            </ul>
+        </header>
+    </div>
+
+</body>
+
+</html>
